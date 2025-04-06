@@ -1,213 +1,250 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>História e Aprendizado - O Papel do Historiador</title>
-    <style>
-        body {
-            background-color: white;
-            color: #333;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #FFCCCC;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        nav {
-            background-color: #FFFFCC;
-            display: flex;
-            justify-content: center;
-            padding: 15px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: rgba(255,255,255,0.2);
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        main {
-            padding: 20px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        h2 {
-            color: #FFCCCC;
-            border-bottom: 2px solid #FFFFCC;
-            padding-bottom: 10px;
-            margin-top: 40px;
-        }
-        p {
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-        .summary {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-            border-left: 5px solid #FFFFCC;
-        }
-        .summary h3 {
-            color: #FFCCCC;
-            margin-top: 0;
-        }
-        .summary ul {
-            padding-left: 20px;
-        }
-        .summary li {
-            margin-bottom: 10px;
-            cursor: pointer;
-        }
-        .summary li:hover {
-            color: #FFCCCC;
-            text-decoration: underline;
-        }
-        footer {
-            background-color: #FFCCCC;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-        }
-        .contact-btn {
-            display: inline-block;
-            background-color: #FFFFCC;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 10px;
-            transition: background-color 0.3s;
-        }
-        .contact-btn:hover {
-            background-color: #e6a96e;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>História e Aprendizado - O Papel do Historiador</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ba1f98;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      background-color: #FFCCCC;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #ba1f98;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ba1f9822;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    h2 {
+      color: #ba1f98;
+      border-bottom: 2px solid #FFCCCC;
+      padding-bottom: 10px;
+      margin-top: 40px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .summary {
+      background-color: #fdf4f8;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      border-left: 5px solid #ba1f98;
+    }
+
+    .summary h3 {
+      color: #ba1f98;
+      margin-top: 0;
+    }
+
+    .summary li {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .summary li:hover {
+      color: #ba1f98;
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #ba1f98;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      background-color: #FFCCCC;
+      color: #ba1f98;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .contact-btn:hover {
+      background-color: #f3a9d1;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: #fef1f7;
+      padding: 20px;
+      border: 2px solid #FFCCCC;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+
+    .profile img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 4px solid #ba1f98;
+    }
+
+    .profile-details h3 {
+      margin: 0 0 10px 0;
+      color: #ba1f98;
+    }
+
+    .profile-details p {
+      margin: 5px 0;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>História e Aprendizado</h1>
-            <p>O Papel Transformador do Historiador na Sociedade</p>
-        </div>
-    </header>
+  <header>
+    <div class="container">
+      <h1>História e Aprendizado</h1>
+      <p>O Papel Transformador do Historiador na Sociedade</p>
+    </div>
+  </header>
 
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre História</a>
-        <a href="#material">Material de Apoio</a>
-        <a href="#pratique">Pratique</a>
-        <a href="#ajuda">Ajuda</a>
-    </nav>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre História</a>
+    <a href="#material">Material de Apoio</a>
+    <a href="#pratique">Pratique</a>
+    <a href="#ajuda">Ajuda</a>
+  </nav>
 
-    <main class="container">
-        <section id="inicio">
-            <div class="summary">
-                <h3>Sumário</h3>
-                <ul>
-                    <li onclick="scrollToSection('sobre')">O que é História?</li>
-                    <li onclick="scrollToSection('importancia')">A Importância do Historiador</li>
-                    <li onclick="scrollToSection('contemporaneo')">O Historiador Contemporâneo</li>
-                    <li onclick="scrollToSection('futuro')">Historiadores e o Futuro</li>
-                </ul>
-            </div>
+  <main class="container">
+    <!-- Apresentação da Ághata -->
+    <section class="profile" id="inicio">
+      <img src="src/WhatsApp Image 2025-04-06 at 20.00.15 (1).jpeg" alt="Foto de Ághata Bianca">
+      <div class="profile-details">
+        <h3>Ághata Bianca Pessoa de Araújo</h3>
+        <p><strong>Idade:</strong> 17 anos</p>
+        <p><strong>Sobre mim:</strong> Estudante apaixonada por História, dedicada em entender o passado para transformar o presente. Acredito que o conhecimento histórico é uma das chaves para uma sociedade mais justa e consciente.</p>
+      </div>
+    </section>
 
-            <h2 id="sobre">O que é História?</h2>
-            <p>A História, como bem definiu Marc Bloch, é antes de tudo um conhecimento adquirido por meio da pesquisa metódica e crítica. Mas vai além: é a ciência que estuda as ações humanas no tempo, buscando compreender como sociedades se transformam, como culturas evoluem e como eventos do passado ecoam no presente.</p>
+    <div class="summary">
+      <h3>Sumário</h3>
+      <ul>
+        <li onclick="scrollToSection('sobre')">O que é História?</li>
+        <li onclick="scrollToSection('importancia')">A Importância do Historiador</li>
+        <li onclick="scrollToSection('contemporaneo')">O Historiador Contemporâneo</li>
+        <li onclick="scrollToSection('futuro')">Historiadores e o Futuro</li>
+      </ul>
+    </div>
 
-            <p>O historiador não é apenas um coletor de fatos, mas um intérprete das experiências humanas. Sua tarefa fundamental é investigar, analisar e contextualizar os eventos, sempre com rigor metodológico e sensibilidade crítica.</p>
-        </section>
+    <h2 id="sobre">O que é História?</h2>
+    <p>A História, como bem definiu Marc Bloch, é antes de tudo um conhecimento adquirido por meio da pesquisa metódica e crítica. Mas vai além: é a ciência que estuda as ações humanas no tempo, buscando compreender como sociedades se transformam, como culturas evoluem e como eventos do passado ecoam no presente.</p>
 
-        <section>
-            <h2 id="importancia">A Importância do Historiador na Sociedade</h2>
-            <p>O historiador desempenha um papel crucial na sociedade contemporânea como:</p>
-            <ul>
-                <li><strong>Guardião da memória coletiva:</strong> Preserva e interpreta os registros do passado, evitando que importantes lições sejam esquecidas.</li>
-                <li><strong>Crítico social:</strong> Analisa as estruturas de poder e as dinâmicas sociais através do tempo, oferecendo perspectivas para entender o presente.</li>
-                <li><strong>Educador:</strong> Transmite conhecimentos históricos de forma acessível, promovendo o pensamento crítico na população.</li>
-                <li><strong>Conselheiro político:</strong> Oferece insights baseados em experiências históricas para a tomada de decisões contemporâneas.</li>
-            </ul>
+    <p>O historiador não é apenas um coletor de fatos, mas um intérprete das experiências humanas. Sua tarefa fundamental é investigar, analisar e contextualizar os eventos, sempre com rigor metodológico e sensibilidade crítica.</p>
 
-            <p>Em um mundo de informações rápidas e superficiais, o historiador oferece profundidade e contexto, ajudando a sociedade a navegar entre fatos e interpretações.</p>
-        </section>
+    <h2 id="importancia">A Importância do Historiador na Sociedade</h2>
+    <p>O historiador desempenha um papel crucial na sociedade contemporânea como:</p>
+    <ul>
+      <li><strong>Guardião da memória coletiva:</strong> Preserva e interpreta os registros do passado, evitando que importantes lições sejam esquecidas.</li>
+      <li><strong>Crítico social:</strong> Analisa as estruturas de poder e as dinâmicas sociais através do tempo, oferecendo perspectivas para entender o presente.</li>
+      <li><strong>Educador:</strong> Transmite conhecimentos históricos de forma acessível, promovendo o pensamento crítico na população.</li>
+      <li><strong>Conselheiro político:</strong> Oferece insights baseados em experiências históricas para a tomada de decisões contemporâneas.</li>
+    </ul>
 
-        <section>
-            <h2 id="contemporaneo">O Historiador na Era Contemporânea</h2>
-            <p>Na sociedade atual, marcada por transformações aceleradas e globalização, o papel do historiador se expandiu significativamente:</p>
-            
-            <p><strong>Analista de tendências:</strong> Ao estudar padrões históricos, o historiador pode identificar tendências emergentes e seus possíveis desdobramentos.</p>
-            
-            <p><strong>Mediador cultural:</strong> Em sociedades multiculturais, o historiador ajuda a construir pontes entre diferentes tradições e memórias coletivas.</p>
-            
-            <p><strong>Combate à desinformação:</strong> Num momento de "fake news" e revisionismos distorcidos, o historiador atua como verificador de fatos e contextos.</p>
-        </section>
+    <p>Em um mundo de informações rápidas e superficiais, o historiador oferece profundidade e contexto, ajudando a sociedade a navegar entre fatos e interpretações.</p>
 
-        <section>
-            <h2 id="futuro">Historiadores e a Construção do Futuro</h2>
-            <p>Longe de ser apenas um estudioso do passado, o historiador é essencial para projetarmos futuros mais conscientes:</p>
-            
-            <p>Ao compreender como sociedades enfrentaram crises no passado, podemos extrair lições valiosas para os desafios atuais - desde pandemias até mudanças climáticas.</p>
-            
-            <p>O historiador também atua na preservação de documentos e memórias que serão fundamentais para as gerações futuras entenderem nosso tempo.</p>
-            
-            <p>Como afirmou o pensador Benedetto Croce, "toda história é história contemporânea", pois mesmo ao estudar o passado, o fazemos com as questões e preocupações do presente.</p>
-        </section>
-    </main>
+    <h2 id="contemporaneo">O Historiador na Era Contemporânea</h2>
+    <p>Na sociedade atual, marcada por transformações aceleradas e globalização, o papel do historiador se expandiu significativamente:</p>
 
-    <footer id="ajuda">
-        <div class="container">
-            <h3>Entre em Contato</h3>
-            <p>Tem dúvidas sobre História ou sugestões para nosso site?</p>
-            <a href="mailto:aghatabianca001@gmail.com" class="contact-btn">Enviar Email</a>
-            <p>&copy; 2025 História e Aprendizado. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+    <p><strong>Analista de tendências:</strong> Ao estudar padrões históricos, o historiador pode identificar tendências emergentes e seus possíveis desdobramentos.</p>
 
-    <script>
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({
-                behavior: 'smooth'
-            });
+    <p><strong>Mediador cultural:</strong> Em sociedades multiculturais, o historiador ajuda a construir pontes entre diferentes tradições e memórias coletivas.</p>
+
+    <p><strong>Combate à desinformação:</strong> Num momento de "fake news" e revisionismos distorcidos, o historiador atua como verificador de fatos e contextos.</p>
+
+    <h2 id="futuro">Historiadores e a Construção do Futuro</h2>
+    <p>Longe de ser apenas um estudioso do passado, o historiador é essencial para projetarmos futuros mais conscientes:</p>
+
+    <p>Ao compreender como sociedades enfrentaram crises no passado, podemos extrair lições valiosas para os desafios atuais - desde pandemias até mudanças climáticas.</p>
+
+    <p>O historiador também atua na preservação de documentos e memórias que serão fundamentais para as gerações futuras entenderem nosso tempo.</p>
+
+    <p>Como afirmou o pensador Benedetto Croce, "toda história é história contemporânea", pois mesmo ao estudar o passado, o fazemos com as questões e preocupações do presente.</p>
+  </main>
+
+  <footer id="ajuda">
+    <div class="container">
+      <h3>Entre em Contato</h3>
+      <p>Tem dúvidas sobre História ou sugestões para nosso site?</p>
+      <a href="mailto:aghatabianca001@gmail.com" class="contact-btn">Enviar Email</a>
+      <p>&copy; 2025 História e Aprendizado. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        if (targetId === 'ajuda') {
+          document.querySelector('footer').scrollIntoView({
+            behavior: 'smooth'
+          });
+        } else {
+          scrollToSection(targetId);
         }
-        
-        // Adiciona evento para os links de navegação
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                if(targetId === 'ajuda') {
-                    // Rola até o footer
-                    document.querySelector('footer').scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                } else {
-                    scrollToSection(targetId);
-                }
-            });
-        });
-    </script>
+      });
+    });
+  </script>
 </body>
 </html>
