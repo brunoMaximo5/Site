@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>História e Aprendizado - O Papel do Historiador</title>
+  <title></title>
   <style>
     body {
       background-color: #ffffff;
@@ -31,8 +31,8 @@
     }
 
     .logo-title img {
-      height: 60px;
-      width: 60px;
+      height: 120px;
+      width: 120px;
       border-radius: 10px;
     }
 
@@ -135,13 +135,24 @@
       margin: 5px 0;
     }
 
-    .history-img {
-      width: 100%;
-      border-radius: 12px;
+    .history-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
       margin-bottom: 40px;
+    }
+
+    .history-img {
+      width: 40%;
+      border-radius: 12px;
       border: 4px solid #FFCCCC;
       object-fit: cover;
-      max-height: 400px;
+      max-height: 300px;
+    }
+
+    .history-text {
+      flex: 1;
     }
 
     footer {
@@ -171,11 +182,7 @@
 <body>
   <header>
     <div class="container logo-title">
-      <img src="src/OIP (1).jfif" alt="Logo do site">
-      <div>
-        <h1>História e Aprendizado</h1>
-        <p>O Papel Transformador do Historiador na Sociedade</p>
-      </div>
+      <img src="src/WhatsApp Image 2025-04-06 at 20.26.15 (1).jpeg" alt="Logo do site">
     </div>
   </header>
 
@@ -186,7 +193,6 @@
   </nav>
 
   <main class="container">
-    <!-- Apresentação da Ághata -->
     <section class="profile" id="inicio">
       <img src="src/WhatsApp Image 2025-04-06 at 20.00.15 (1).jpeg" alt="Foto de Ághata Bianca">
       <div class="profile-details">
@@ -196,8 +202,14 @@
       </div>
     </section>
 
-    <!-- Imagem ilustrativa -->
-    <img src="src/OIP.jfif" alt="Imagem ilustrativa sobre História" class="history-img">
+    <div class="history-section">
+      <img src="src/OIP.jfif" alt="Imagem ilustrativa sobre História" class="history-img">
+      <div class="history-text">
+        <h2 id="sobre">O que é História?</h2>
+        <p>A História, como bem definiu Marc Bloch, é antes de tudo um conhecimento adquirido por meio da pesquisa metódica e crítica. Mas vai além: é a ciência que estuda as ações humanas no tempo, buscando compreender como sociedades se transformam, como culturas evoluem e como eventos do passado ecoam no presente.</p>
+        <p>O historiador não é apenas um coletor de fatos, mas um intérprete das experiências humanas. Sua tarefa fundamental é investigar, analisar e contextualizar os eventos, sempre com rigor metodológico e sensibilidade crítica.</p>
+      </div>
+    </div>
 
     <div class="summary">
       <h3>Sumário</h3>
@@ -209,11 +221,6 @@
       </ul>
     </div>
 
-    <h2 id="sobre">O que é História?</h2>
-    <p>A História, como bem definiu Marc Bloch, é antes de tudo um conhecimento adquirido por meio da pesquisa metódica e crítica. Mas vai além: é a ciência que estuda as ações humanas no tempo, buscando compreender como sociedades se transformam, como culturas evoluem e como eventos do passado ecoam no presente.</p>
-
-    <p>O historiador não é apenas um coletor de fatos, mas um intérprete das experiências humanas. Sua tarefa fundamental é investigar, analisar e contextualizar os eventos, sempre com rigor metodológico e sensibilidade crítica.</p>
-
     <h2 id="importancia">A Importância do Historiador na Sociedade</h2>
     <p>O historiador desempenha um papel crucial na sociedade contemporânea como:</p>
     <ul>
@@ -221,26 +228,22 @@
       <li><strong>Crítico social:</strong> Analisa as estruturas de poder e as dinâmicas sociais através do tempo, oferecendo perspectivas para entender o presente.</li>
       <li><strong>Educador:</strong> Transmite conhecimentos históricos de forma acessível, promovendo o pensamento crítico na população.</li>
       <li><strong>Conselheiro político:</strong> Oferece insights baseados em experiências históricas para a tomada de decisões contemporâneas.</li>
+      <li><strong>Construtor da identidade cultural:</strong> Ao estudar e divulgar narrativas históricas diversas, contribui para a valorização da diversidade e da memória dos povos.</li>
+      <li><strong>Agente de cidadania:</strong> Estimula o senso crítico, a empatia e a participação social por meio do conhecimento sobre conquistas e lutas do passado.</li>
     </ul>
 
     <p>Em um mundo de informações rápidas e superficiais, o historiador oferece profundidade e contexto, ajudando a sociedade a navegar entre fatos e interpretações.</p>
 
     <h2 id="contemporaneo">O Historiador na Era Contemporânea</h2>
     <p>Na sociedade atual, marcada por transformações aceleradas e globalização, o papel do historiador se expandiu significativamente:</p>
-
     <p><strong>Analista de tendências:</strong> Ao estudar padrões históricos, o historiador pode identificar tendências emergentes e seus possíveis desdobramentos.</p>
-
     <p><strong>Mediador cultural:</strong> Em sociedades multiculturais, o historiador ajuda a construir pontes entre diferentes tradições e memórias coletivas.</p>
-
     <p><strong>Combate à desinformação:</strong> Num momento de "fake news" e revisionismos distorcidos, o historiador atua como verificador de fatos e contextos.</p>
 
     <h2 id="futuro">Historiadores e a Construção do Futuro</h2>
     <p>Longe de ser apenas um estudioso do passado, o historiador é essencial para projetarmos futuros mais conscientes:</p>
-
     <p>Ao compreender como sociedades enfrentaram crises no passado, podemos extrair lições valiosas para os desafios atuais - desde pandemias até mudanças climáticas.</p>
-
     <p>O historiador também atua na preservação de documentos e memórias que serão fundamentais para as gerações futuras entenderem nosso tempo.</p>
-
     <p>Como afirmou o pensador Benedetto Croce, "toda história é história contemporânea", pois mesmo ao estudar o passado, o fazemos com as questões e preocupações do presente.</p>
   </main>
 
