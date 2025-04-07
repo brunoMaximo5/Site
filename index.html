@@ -33,20 +33,21 @@
       background-color: #FFCCCC;
       display: flex;
       justify-content: center;
-      padding: 15px;
+      padding: 15px 20px;
       position: sticky;
       top: 0;
       z-index: 100;
-      gap: 20px;
+      gap: 35px;
     }
 
     nav a {
       color: #a60056;
       text-decoration: none;
       font-weight: bold;
-      padding: 5px 10px;
-      border-radius: 5px;
+      padding: 10px 15px;
+      border-radius: 8px;
       transition: background-color 0.3s;
+      font-size: 1.05rem;
     }
 
     nav a:hover {
@@ -62,21 +63,23 @@
       display: none;
       position: absolute;
       background-color: #FFCCCC;
-      min-width: 160px;
+      min-width: 180px;
       z-index: 1;
-      border-radius: 5px;
+      border-radius: 8px;
       box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      margin-top: 5px;
     }
 
     .dropdown-content a {
       color: #a60056;
-      padding: 10px 16px;
+      padding: 12px 16px;
       text-decoration: none;
       display: block;
+      border-bottom: 1px solid #f4b6c1;
     }
 
-    .dropdown-content a:hover {
-      background-color: #fdd7e4;
+    .dropdown-content a:last-child {
+      border-bottom: none;
     }
 
     .dropdown:hover .dropdown-content {
@@ -214,14 +217,15 @@
 
   <main class="container">
     <section class="profile" id="inicio">
-      <img src="src/WhatsApp Image 2025-04-06 at 20.00.15 (1).jpeg" alt="Foto de Ághata Bianca">
-      <div class="profile-details">
-        <h3>Ághata Bianca Pessoa de Araújo</h3>
-        <p><strong>Idade:</strong> 17 anos</p>
-        <p><strong>Sobre mim:</strong> Estudante apaixonada por História, dedicada em entender o passado para transformar o presente. Acredito que o conhecimento histórico é uma das chaves para uma sociedade mais justa e consciente.</p>
-      </div>
-    </section>
-
+        <img src="src/WhatsApp Image 2025-04-06 at 20.00.15 (1).jpeg" alt="Foto de Ághata Bianca">
+        <div class="profile-details">
+          <h3>Ághata Bianca Pessoa de Araújo</h3>
+          <p><strong>Idade:</strong> 17 anos</p>
+          <p><strong>Sobre mim:</strong> Olá! Meu nome é Ághata Bianca e sou estudante de Licenciatura em História pela Universidade de Pernambuco (UPE). Descobri minha paixão pela História ainda no ensino médio, e desde então, ela vem transformando meu modo de ver o mundo. Criei este espaço para mostrar a você que a História vai muito além dos livros e datas – ela nos ajuda a entender quem somos, de onde viemos e para onde podemos ir. Espero que, por aqui, você possa aprender, se inspirar e, quem sabe, se apaixonar por essa matéria tanto quanto eu.</p>
+          <p><em>Afinal, o presente só faz sentido quando conhecemos o passado!</em></p>
+        </div>
+      </section>
+      
     <div class="summary">
       <h3>Sumário</h3>
       <ul>
