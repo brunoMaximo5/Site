@@ -37,12 +37,12 @@
       position: sticky;
       top: 0;
       z-index: 100;
+      gap: 20px;
     }
 
     nav a {
       color: #a60056;
       text-decoration: none;
-      margin: 0 20px;
       font-weight: bold;
       padding: 5px 10px;
       border-radius: 5px;
@@ -51,6 +51,36 @@
 
     nav a:hover {
       background-color: #fdd7e4;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #FFCCCC;
+      min-width: 160px;
+      z-index: 1;
+      border-radius: 5px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .dropdown-content a {
+      color: #a60056;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #fdd7e4;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
 
     .container {
@@ -174,6 +204,12 @@
     <a href="#inicio">Início</a>
     <a href="#sobre">Sobre História</a>
     <a href="#ajuda">Ajuda</a>
+    <div class="dropdown">
+      <a href="#">Assuntos</a>
+      <div class="dropdown-content">
+        <a href="arqueologia.html">Arqueologia</a>
+      </div>
+    </div>
   </nav>
 
   <main class="container">
@@ -186,7 +222,6 @@
       </div>
     </section>
 
-    <!-- SUMÁRIO ANTES DA SEÇÃO DE HISTÓRIA -->
     <div class="summary">
       <h3>Sumário</h3>
       <ul>
@@ -250,14 +285,17 @@
 
     document.querySelectorAll('nav a').forEach(link => {
       link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        if (targetId === 'ajuda') {
-          document.querySelector('footer').scrollIntoView({
-            behavior: 'smooth'
-          });
-        } else {
-          scrollToSection(targetId);
+        const href = this.getAttribute('href');
+        if (href.startsWith("#")) {
+          e.preventDefault();
+          const targetId = href.substring(1);
+          if (targetId === 'ajuda') {
+            document.querySelector('footer').scrollIntoView({
+              behavior: 'smooth'
+            });
+          } else {
+            scrollToSection(targetId);
+          }
         }
       });
     });

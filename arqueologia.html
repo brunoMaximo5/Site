@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arqueologia | História & Saber</title>
+  <style>
+    body {
+      background-color: #F7DBC6;
+      color: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #CE68B5;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .logo-title img {
+      height: 180px;
+      width: 180px;
+      border-radius: 50%;
+      border: 5px solid #F7DBC6;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      background-color: #FFCCCC;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #a60056;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #fdd7e4;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #a60056;
+      border-bottom: 2px solid #FFCCCC;
+      padding-bottom: 10px;
+      margin-top: 40px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .summary {
+      background-color: #fdf4f8;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      border-left: 5px solid #a60056;
+    }
+
+    .summary h3 {
+      color: #a60056;
+      margin-top: 0;
+    }
+
+    .summary li {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .summary li:hover {
+      color: #a60056;
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #CE68B5;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      background-color: #FFCCCC;
+      color: #a60056;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .contact-btn:hover {
+      background-color: #f3a9d1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="src/WhatsApp Image 2025-04-06 at 21.14.29 (1).jpeg" alt="Logo do site">
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="#arqueologia">Sobre Arqueologia</a>
+    <a href="#ajuda">Ajuda</a>
+  </nav>
+
+  <main class="container">
+    <div class="summary">
+      <h3>Sumário</h3>
+      <ul>
+        <li onclick="scrollToSection('arqueologia')">O que é Arqueologia?</li>
+        <li onclick="scrollToSection('metodos')">Métodos da Arqueologia</li>
+        <li onclick="scrollToSection('importancia')">Importância da Arqueologia</li>
+      </ul>
+    </div>
+
+    <h2 id="arqueologia">O que é Arqueologia?</h2>
+    <p>A Arqueologia é uma ciência que estuda as sociedades humanas por meio de seus vestígios materiais. Por meio de escavações, análises e interpretações, os arqueólogos buscam reconstruir o modo de vida de civilizações antigas e recentes, oferecendo uma janela direta para o passado da humanidade.</p>
+
+    <h2 id="metodos">Métodos da Arqueologia</h2>
+    <p>Os arqueólogos utilizam diversas técnicas para encontrar, preservar e estudar artefatos:</p>
+    <ul>
+      <li><strong>Escavação:</strong> Processo cuidadoso de remoção de camadas do solo para encontrar objetos enterrados.</li>
+      <li><strong>Datação:</strong> Métodos como carbono-14 e dendrocronologia ajudam a determinar a idade de artefatos.</li>
+      <li><strong>Análise laboratorial:</strong> Permite estudar a composição, uso e origem de materiais encontrados.</li>
+      <li><strong>Mapeamento e georreferenciamento:</strong> Localização precisa de sítios e objetos no espaço geográfico.</li>
+    </ul>
+
+    <h2 id="importancia">Importância da Arqueologia</h2>
+    <p>A Arqueologia é essencial para compreendermos nossa origem, nossas práticas culturais e nossa evolução social. Ela complementa os registros históricos e contribui para a valorização do patrimônio cultural, preservando a memória das civilizações e revelando histórias não contadas nos livros.</p>
+  </main>
+
+  <footer id="ajuda">
+    <div class="container">
+      <h3>Entre em Contato</h3>
+      <p>Tem dúvidas sobre Arqueologia ou sugestões para nosso site?</p>
+      <a href="mailto:aghatabianca001@gmail.com" class="contact-btn">Enviar Email</a>
+      <p>&copy; 2025 História e Aprendizado. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>
